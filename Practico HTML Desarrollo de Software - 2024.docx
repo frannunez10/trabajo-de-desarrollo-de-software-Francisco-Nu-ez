@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Práctico HTML</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Asegura que las celdas compartan bordes */
+        }
+        th, td {
+            border: 1px solid #ddd; /* Bordes ligeros para las celdas */
+            padding: 8px; /* Espaciado interno en las celdas */
+            text-align: left; /* Alineación del texto */
+        }
+        th {
+            background-color: #f2f2f2; /* Color de fondo para los encabezados */
+            color: #333; /* Color del texto para los encabezados */
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9; /* Color de fondo alterno para las filas */
+        }
+        tr:hover {
+            background-color: #ddd; /* Color de fondo al pasar el ratón sobre una fila */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezados -->
+    <h1 style="font-weight:bold;">Título Principal</h1>
+    <h2 style="font-style:italic;">Subtítulo</h2>
+    <h3 style="text-decoration:underline;">Sección</h3>
+    <h4>Encabezado 4</h4>
+    <h5>Encabezado 5</h5>
+    <h6>Encabezado 6</h6>
+
+    <!-- División de Contenido -->
+    <div>
+        <p>Este es un párrafo dentro de un <strong>div</strong>. <em>Este texto está en cursiva.</em></p>
+    </div>
+
+    <!-- Enlaces y Listas -->
+    <a href="https://www.ejemplo.com">Enlace a una página externa</a><br>
+    <a href="#seccion1">Enlace interno a la sección 1</a>
+
+    <ol>
+        <li>Elemento de lista ordenada 1</li>
+        <li>Elemento de lista ordenada 2</li>
+    </ol>
+    <ul>
+        <li>Elemento de lista desordenada 1</li>
+        <li>Elemento de lista desordenada 2</li>
+    </ul>
+
+    <!-- Elementos Multimedia -->
+    <img src="https://i0.wp.com/coplaco.com/wp-content/uploads/2019/04/MEMES.png?w=1170&ssl=1" alt="Descripción de la imagen" width="300" height="200">
+    <video controls width="320" height="240">
+        <source src="https://video-previews.elements.envatousercontent.com/5b3b6876-9689-4cfe-9692-1cf061a156f6/watermarked_preview/watermarked_preview.mp4" type="video/mp4">
+    </video>
+    <audio controls>
+        <source src="https://download.blender.org/peach/trailer/trailer_1080p.ogg" type="audio/mp3">
+    </audio>
+
+    <!-- Tabla -->
+    <table>
+        <thead>
+            <tr>
+                <th>Encabezado 1</th>
+                <th>Encabezado 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+            </tr>
+            <tr>
+                <td>Dato 3</td>
+                <td>Dato 4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Formulario -->
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje"></textarea><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Estructura Semántica -->
+    <header>
+        <h1>Encabezado del Sitio</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#seccion1">Sección 1</a></li>
+            <li><a href="#seccion2">Sección 2</a></li>
+        </ul>
+    </nav>
+    <section>
+        <article>
+            <h2>Artículo Principal</h2>
+            <p>Contenido del artículo.</p>
+        </article>
+    </section>
+    <footer>
+        <p>Pie de página</p>
+    </footer>
+
+</body>
+</html>
